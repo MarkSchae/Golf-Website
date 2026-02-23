@@ -32,6 +32,13 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 # Load environment variables
 load_dotenv()
 
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL is not set in .env")
+
+config.set_main_option("sqlalchemy.url", DATABASE_URL)
+
 target_metadata = Base.metadata
 
 
