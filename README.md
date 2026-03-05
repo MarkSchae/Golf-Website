@@ -99,7 +99,7 @@ Backend services integrated with other systems (e.g., Rust microservices)
 
 # Golf Pro Fitting Web App — Project Setup Documentation
 
-## 1. Project Overview
+##  Project Overview
 
 This project aims to build a data-driven golf performance and fitting application using:
 
@@ -113,7 +113,7 @@ The goal of this phase was to design and validate the **data pipeline and backen
 
 ---
 
-## 2. Data Design Phase (Google Sheets)
+##  Data Design Phase (Google Sheets)
 
 ### Objective
 
@@ -141,7 +141,7 @@ A validated logical data model ready to migrate into PostgreSQL.
 
 ---
 
-## 3. Database Setup (PostgreSQL + DBeaver)
+##  Database Setup (PostgreSQL + DBeaver)
 
 ### Environment Reality (Key Learning)
 
@@ -194,7 +194,7 @@ stagingstats
 
 ---
 
-## 4. Mock Data Import
+##  Mock Data Import
 
 Data from Google Sheets was imported into PostgreSQL.
 
@@ -210,7 +210,7 @@ Key advantage:
 
 ---
 
-## 5. FastAPI Backend Template Setup
+##  FastAPI Backend Template Setup
 
 ### Goal
 
@@ -234,7 +234,7 @@ This template now serves as a starting point for future database-driven APIs.
 
 ---
 
-## 6. WSL ↔ PostgreSQL Connectivity Testing
+##  WSL ↔ PostgreSQL Connectivity Testing
 
 ### Problem Encountered
 
@@ -295,7 +295,7 @@ SELECT * FROM golf.rounds;
 
 ---
 
-## 7. SQL Query Testing
+##  SQL Query Testing
 
 Queries were validated directly in `psql`.
 
@@ -320,9 +320,9 @@ Output confirmed:
 
 ---
 
-## 8. Key Technical Lessons Learned
+##  Key Technical Lessons Learned
 
-### 1. Environment Separation Matters
+###  Environment Separation Matters
 
 WSL and Windows behave like separate machines.
 
@@ -333,7 +333,7 @@ Always confirm:
 
 ---
 
-### 2. GUI Tools Do Not Own Databases
+###  GUI Tools Do Not Own Databases
 
 DBeaver only connects to servers — it does not create them.
 
@@ -341,53 +341,34 @@ The server location determines accessibility.
 
 ---
 
-### 3. Validate Data Before Coding APIs
+###  Validate Data Before Coding APIs
 
 Designing datasets first reduced backend rework.
 
 ---
 
-### 4. Test Database Access Early
+###  Test Database Access Early
 
 Testing with `psql` saved significant debugging time later.
 
 ---
 
-## 9. Current Project State
+##  Current Project State
 
-✅ Data model designed
-✅ Mock data created
-✅ PostgreSQL schema operational
-✅ FastAPI template initialized
-✅ Backend ↔ database connectivity verified
-✅ SQL queries tested and analyzed
+ Data model designed
+ Mock data created
+ PostgreSQL schema operational
+ FastAPI template initialized
+ Backend ↔ database connectivity verified
+ SQL queries tested and analyzed
 
 ---
 
-## 10. Next Steps
+##  Next Steps
 
 * Implement FastAPI database models
 * Create API endpoints
 * Add query layer (CRUD operations)
 * Integrate frontend consumers
 * Introduce analytics/statistics logic
-
----
-
-## (Optional) Portfolio Summary Version
-
-If needed for CV/portfolio:
-
-> Designed and implemented a PostgreSQL-backed FastAPI project from data modeling through backend connectivity. Created mock datasets, normalized relational schema, configured cross-environment database access between WSL and Windows, and validated SQL performance using execution plans.
-
----
-
-If you want, next I can help you turn this into one of these (very useful career-wise):
-
-1. **Developer Journal version** (shows thinking process — very impressive to recruiters)
-2. **GitHub README optimized for hiring managers**
-3. **Architecture diagram** showing Sheets → DB → FastAPI → Client
-4. **“Lessons learned” engineering blog post** (this one is secretly powerful)
-
-Which direction do you want to go?
 
