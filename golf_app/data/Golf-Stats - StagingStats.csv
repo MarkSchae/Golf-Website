@@ -1,0 +1,35 @@
+player_name,player_age,player_gender,fitted_clubs,age_started_golf,practice_sessions_week,rounds_played_year,tee_played,max_carry_driver_m,course_name,date_played,course_par_score,course_record,course_red_yardage_m,course_blue_yardage_m,course_white_yardage_m,course_black_yardage_m,fairways_hit,score,gir,putts,birdies,pars,course_difficulty_rating
+Name Surname,101,M,TRUE,35,15,151,White,220,Durbanville Golf Club,1/6/2025,72,62,5400,5800,6100,6300,19,118,22,54,50,20,11
+Mark Schaefer ,35,M,FALSE,33,1,12,White,230,Durbanville Golf Club,12/28/2024,72,62,5400,5800,6100,6300,5,118,2,60,0,1,7
+Maxine Schaefer,35,M,TRUE,35,5,0,Blue,120,Hazendal Golf Club (Par‑3),12/16/2025,54,50,1200,1400,1600,1800,0,140,0,100,0,0,10
+Steven Schaefer,40,M,FALSE,40,0,0,Red,180,Atlantic Beach Links,12/4/2025,72,63,5700,5980,6200,6500,3,155,0,70,0,0,2
+Steven Schaefer,40,M,FALSE,40,0,0,Red,180,Clovelly Country Club,12/14/2025,72,65,5200,5500,5700,5908,2,150,0,80,0,1,8
+Mark Schaefer ,35,M,FALSE,33,1,12,White,230,Bellville Golf Club,12/24/2025,72,66,5250,5550,5800,6000,6,118,3,60,1,4,10
+Gregg Styen,34,F,TRUE,16,0,20,Black (tournament),260,Durbanville Golf Club,12/4/2025,72,62,5400,5800,6100,6300,12,90,6,30,5,5,3
+Gregg Styen,34,M,TRUE,16,0,20,White,260,Hazendal Golf Club (Par‑3),12/10/2025,54,50,1200,1400,1600,1800,15,102,10,40,2,1,10
+Liam Jacobs,28,M,FALSE,15,1,12,Blue,260,Clovelly Country Club,4/20/2025,72,65,5200,5500,5700,5908,7,92,5,36,1,7,7
+Liam Jacobs,28,M,FALSE,15,1,12,Blue,260,Clovelly Country Club,2/8/2025,72,65,5200,5500,5700,5908,8,89,6,35,2,8,7
+Sarah Williams,31,F,TRUE,10,4,40,Red,195,Milnerton Golf Club,1/1/2025,72,64,5600,5950,6200,6450,11,82,9,30,4,10,6
+Sarah Williams,31,F,TRUE,10,4,40,Red,195,Milnerton Golf Club,2/18/2025,72,64,5600,5950,6200,6450,12,80,10,29,5,9,6
+Jason Naidoo,42,M,FALSE,18,2,20,White,230,King David Mowbray Golf Club,3/26/2025,72,64,5300,5600,5850,6065,6,96,4,38,0,6,8
+Jason Naidoo,42,M,FALSE,18,2,20,White,230,King David Mowbray Golf Club,3/15/2025,72,64,5300,5600,5850,6065,7,94,5,37,1,7,8
+Emily Botha,24,F,TRUE,8,5,60,Red,210,Somerset West GCC,1/13/2026,72,64,5450,5750,6000,6200,13,78,11,28,6,8,6
+Emily Botha,24,F,TRUE,8,5,60,Red,210,Somerset West GCC,1/31/2026,72,64,5450,5750,6000,6200,14,76,12,27,7,7,6
+William Ruddling,36,M,TRUE,12,0,2,White,270,Bellville Golf Club,1/2/2026,72,66,5250,5550,5800,6000,16,77,18,36,4,5,6
+Mark Schaefer ,35,M,FALSE,33,1,3,White,240,Bellville Golf Club,1/2/2026,72,66,5250,5550,5800,6000,2,120,2,70,0,1,5
+William Ruddling,36,M,TRUE,12,0,2,White,280,Rondebosch Golf Club,1/6/2026,72,65,5350,5650,5900,6150,17,74,15,36,2,12,8
+William Ruddling,36,M,TRUE,12,0,2,White,250,Atlantic Beach Links,3/7/2026,72,63,5700,5980,6200,6500,18,72,18,30,3,12,6
+William Ruddling,36,M,TRUE,12,0,2,White,275,Kuilsriver Golf Club,3/14/2026,72,66,5300,5600,5850,6050,18,70,18,30,2,16,3
+Maxine Schaefer,35,M,TRUE,35,5,0,Red,120,Simons Town Country Club,6/13/2026,72,65,5350,5650,5900,6100,0,160,0,85,0,0,10
+Maxine Schaefer,35,M,TRUE,35,5,0,Red,125,Simons Town Country Club,6/14/2026,72,65,5350,5650,5900,6100,1,142,1,75,0,0,10
+Gregg Styen,34,M,TRUE,16,0,20,White,220,Rondebosch Golf Club,4/18/2026,72,65,5350,5650,5900,6150,9,90,11,40,1,10,9
+Mark Schaefer ,35,M,FALSE,33,1,12,White,240,Rondebosch Golf Club,4/18/2026,72,65,5350,5650,5900,6150,5,110,2,60,0,2,9
+Steven Schaefer,40,M,FALSE,40,0,0,White,185,Rondebosch Golf Club,4/18/2026,72,65,5350,5650,5900,6150,1,140,0,90,0,0,10
+Gregg Styen,34,M,TRUE,16,0,20,White,250,Milnerton Golf Club,4/19/2026,72,64,5600,5950,6200,6450,12,85,,40,2,5,6
+Mark Schaefer ,35,M,FALSE,33,1,12,White,275,Milnerton Golf Club,4/19/2026,72,64,5600,5950,6200,6450,7,105,4,48,1,2,7
+Steven Schaefer,40,M,FALSE,40,0,0,White,215,Milnerton Golf Club,4/19/2026,72,64,5600,5950,6200,6450,3,135,0,70,0,0,9
+William Ruddling,36,M,TRUE,12,0,2,White,280,Milnerton Golf Club,4/19/2026,72,64,5600,5950,6200,6450,18,68,18,30,4,14,4
+Maxine Schaefer,35,M,TRUE,35,5,0,Red,130,Parow Golf Club,9/19/2026,72,67,5250,5550,5850,6050,1,138,1,70,0,1,10
+Giselle Gillawee,34,F,FALSE,34,0,0,Red,58,Parow Golf Club,9/19/2026,72,67,5250,5550,5850,6050,0,160,0,90,0,0,10
+Savanah Ruddling,31,F,FALSE,31,0,0,Red,160,Parow Golf Club,9/19/2026,72,67,5250,5550,5850,6050,3,122,5,60,1,3,10
+

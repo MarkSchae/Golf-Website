@@ -1,0 +1,65 @@
+function onEdit(e) {
+  const statsSheetName = "Stats";
+  const playersSheetName = "Players";
+  const externalIdColumn = 25;
+  const headerRows = 1;
+
+  const sheet = e.range.getSheet();
+  if (!sheet || sheet.getName() !== statsSheetName) return;
+
+  const row = e.range.getRow();
+  if (row <= headerRows) return; // Skip header
+
+  // --- Part 1: Generate external_id ---
+  const idCell = sheet.getRange(row, externalIdColumn);
+  if (!idCell.getValue()) {
+    idCell.setValue(Utilities.getUuid());
+  }
+
+  // --- Part 2: Sync Stats with Players sheet ---
+  const playersSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(playersSheetName);
+  if (!playersSheet) return;
+
+  const playerName = sheet.getRange(row, 1).getValue(); // Column A
+  if (!playerName) return; // Do nothing if name empty
+
+  const playersData = playersSheet.getDataRange().getValues(); // includes header
+  const numFields = 7; // A-G
+  let playerRowIndex = null;
+
+  for (let i = 1; i < playersData.length; i++) {
+    if (playersData[i][0] === playerName) {
+      playerRowIndex = i;
+      break;
+    }
+  }
+
+  // --- Get all Stats values for this row ---
+  const statsRowValues = [];
+  for (let c = 1; c <= numFields; c++) {
+    statsRowValues.push(sheet.getRange(row, c).getValue());
+  }
+
+  // --- Case 1: Player exists ---
+  if (playerRowIndex !== null) {
+    for (let c = 1; c < numFields; c++) { // skip column A (name)
+      const statsVal = statsRowValues[c];
+      const playersVal = playersData[playerRowIndex][c];
+
+      // Autofill Stats if empty
+      if ((statsVal === "" || statsVal === null) && playersVal !== "") {
+        sheet.getRange(row, c + 1).setValue(playersVal);
+      }
+
+      // Update Players if Stats has a new value
+      if (statsVal !== "" && statsVal !== null && statsVal !== playersVal) {
+        playersSheet.getRange(playerRowIndex + 1, c + 1).setValue(statsVal);
+      }
+    }
+
+  } else {
+    // --- Case 2: New player ---
+    // Append new row in Players with name + all Stats values
+    playersSheet.appendRow(statsRowValues);
+  }
+}

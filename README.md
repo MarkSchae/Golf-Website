@@ -14,7 +14,6 @@
 
 - Setup script for fast bootstrapping
 
-This repository is intended to be used as a base template for new FastAPI projects.
 
 ### Features
 
